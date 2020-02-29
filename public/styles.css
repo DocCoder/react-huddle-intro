@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: hsl(257, 40%, 49%);
+}
+h2, h3 {
+  font-family: font-family: 'Poppins', serif;
+}
+
+h2 {
+  font-size: 700;
+}
+p {
+  font-weight: 200;
+}
+body {
+  background-color: var(--primaryColor);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-image: url("./bg-mobile.svg");
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+  padding: 1.875rem 1.875rem;
+  background-size: cover;
+}
+.App-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headarea {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mainarea {
+  width: 100%;
+  margin-top: 3.125rem;
+}
+.mockup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+.cta {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+
+.regbtn {
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: var(--primaryColor);
+  padding: 12px 41px;
+  text-decoration: none;
+  border-width: 0;
+}
+.footarea {
+  width: 100%;
+  text-align: center;
+}
+.icons {
+  margin: 10px;
+  -webkit-text-stroke: 2px white;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 959px) {
+  .mainarea {
+    display: flex;
+    flex-direction: row;
+  }
+  .mockup {
+    flex: 1 1 60%;
+  }
+  .cta {
+    flex: 1 1 40%;
+    text-align: left;
+    margin-left: 3%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 960px) {
+  body {
+    background-image: url("./bg-desktop.svg");
+  }
+  .App-wrap {
+    width: 100%;
+    margin: 0 3%;
+  }
+  .mainarea {
+    display: flex;
+    flex-direction: row;
+  }
+  .mockup {
+    flex: 1 1 50%;
+  }
+  .cta {
+    flex: 1 1 50%;
+    text-align: left;
+    margin-left: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 3%;
+    padding-right: 10%;
+
+  }
+  .footarea {
+    width: 94%;
+    text-align: right;
+  }
+  
+}
